@@ -161,31 +161,32 @@ footer {
 @media screen and (max-width: 767px) {
   main {
     width: 100vw;
-    height: 70vh;
+    height: 85vh;
   }
   #quote-wrapper {
-    width: 95vw;
+    width: 90vw;
     height: 75%;
     margin-bottom: 50px;
   }
   #quote,
   #quote_long,
   #quote_so_long {
-    font-size: 35px;
+    margin-top: 100px;
+    font-size: 25px;
     margin-top: 140px;
   }
 
   #author {
-    font-size: 25px;
+    font-size: 15px;
   }
 
   #link-tag {
-    font-size: 20px;
+    font-size: 15px;
   }
   #link-tag:hover {
-    font-size: 30px;
+    font-size: 15px;
   }
   #top_main {
-    font-size: 45px;
+    font-size: 40px;
   }
 }
