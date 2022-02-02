@@ -1,0 +1,29 @@
+<header></header>
+  <main>
+      {{#if error_often}}
+         <div id="quote-wrapper">
+           <p id="error">{{message}}</p>
+        </div>
+     {{/if}}
+     {{#if word_short}}
+         <div id="quote-wrapper">
+           <p id="quote">{{data.q}}</p>
+           <p id="author">{{data.a}}</p>
+        </div>
+     {{/if}}
+       {{#if word_so_long}}
+          <div id="quote-wrapper">
+              <p id="quote_so_long">{{data.q}}</p>
+             <p id="author">{{data.a}}</p>
+          </div>
+     {{/if}}
+     {{#if word_long}}
+          <div id="quote-wrapper">
+              <p id="quote_long">{{data.q}}</p>
+             <p id="author">{{data.a}}</p>
+          </div>
+     {{/if}}
+     <a href="/quote" id="link-tag"><p>Find Another Quote.</p></a>
+  </main>
+<footer></footer>
+

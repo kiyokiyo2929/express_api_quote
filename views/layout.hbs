@@ -1,10 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{{title}}</title>
+    <title>Find Nice Quotes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;1,600&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
-  <body>
+
+  {{#if background0}}
+  <body id="background_image0">
     {{{body}}}
   </body>
+  {{/if}}
+
+   {{#if background1}}
+  <body id="background_image1">
+    {{{body}}}
+  </body>
+  {{/if}}
+
+   {{#if background2}}
+  <body id="background_image2">
+    {{{body}}}
+  </body>
+  {{/if}}
+
+  {{#if background_main}}
+  <body id="background_main">
+    {{{body}}}
+  </body>
+  {{/if}}
+  
+  
 </html>

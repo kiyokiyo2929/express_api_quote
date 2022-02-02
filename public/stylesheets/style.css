@@ -1,8 +1,173 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito Sans", sans-serif;
+  background-position: center;
+  background-size: cover;
+}
+
+#background_image0 {
+  background-image: url("/images/IMG_6348.JPG");
+}
+
+#background_image1 {
+  background-image: url("/images/IMG_5987.JPG");
+}
+
+#background_image2 {
+  background-image: url("/images/IMG_6134.JPG");
+}
+
+#background_main {
+  background-image: url("/images/IMG_0355.JPG");
 }
 
 a {
-  color: #00B7FF;
+  color: #e7e9ea;
+}
+header,
+footer {
+  height: 10vh;
+}
+main {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#top {
+  text-decoration: none;
+}
+#top_main {
+  font-size: 120px;
+  font-weight: bold;
+  text-decoration: none;
+  opacity: 0;
+  animation-name: top_effect;
+  animation-duration: 8s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes top_effect {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#quote-wrapper {
+  width: 65%;
+  height: 80%;
+  position: relative;
+  margin-bottom: 50px;
+}
+#error {
+  font-size: 50px;
+  color: white;
+  width: 100%;
+  margin-top: 170px;
+  font-style: italic;
+}
+#quote {
+  font-size: 50px;
+  color: white;
+  width: 100%;
+  margin-top: 190px;
+  font-style: italic;
+  opacity: 0;
+  animation-name: quote_effect;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes quote_effect {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+#quote_long {
+  font-size: 40px;
+  color: white;
+  width: 100%;
+  margin-top: 190px;
+  font-style: italic;
+  opacity: 0;
+  animation-name: quote_effect;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+#quote_so_long {
+  font-size: 35px;
+  color: white;
+  width: 100%;
+  margin-top: 170px;
+  font-style: italic;
+  opacity: 0;
+  animation-name: quote_effect;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+#author {
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  color: white;
+  right: 0;
+  opacity: 0;
+  animation-name: author_effect;
+  animation-duration: 6s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes author_effect {
+  0% {
+    opacity: 0;
+    transform: translateY(80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#link-tag {
+  font-size: 25px;
+}
+#link-tag:hover {
+  font-size: 25px;
+  font-weight: bold;
+}
+footer {
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  main {
+    width: 100vw;
+    height: 60vh;
+  }
+  #quote-wrapper {
+    width: 90%;
+    height: 70%;
+    margin-bottom: 50px;
+  }
+  #quote,
+  #quote_long,
+  #quote_so_long {
+    font-size: 60px;
+  }
 }
