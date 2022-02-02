@@ -99,6 +99,7 @@ main {
   color: white;
   width: 100%;
   margin-top: 190px;
+  margin-bottom: 20px;
   font-style: italic;
   opacity: 0;
   animation-name: quote_effect;
@@ -111,6 +112,7 @@ main {
   color: white;
   width: 100%;
   margin-top: 170px;
+  margin-bottom: 20px;
   font-style: italic;
   opacity: 0;
   animation-name: quote_effect;
@@ -118,6 +120,7 @@ main {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
+
 #author {
   font-size: 30px;
   font-weight: bold;
@@ -158,16 +161,31 @@ footer {
 @media screen and (max-width: 767px) {
   main {
     width: 100vw;
-    height: 60vh;
+    height: 70vh;
   }
   #quote-wrapper {
-    width: 90%;
-    height: 70%;
+    width: 95vw;
+    height: 75%;
     margin-bottom: 50px;
   }
   #quote,
   #quote_long,
   #quote_so_long {
-    font-size: 60px;
+    font-size: 35px;
+    margin-top: 140px;
+  }
+
+  #author {
+    font-size: 25px;
+  }
+
+  #link-tag {
+    font-size: 20px;
+  }
+  #link-tag:hover {
+    font-size: 30px;
+  }
+  #top_main {
+    font-size: 45px;
   }
 }
