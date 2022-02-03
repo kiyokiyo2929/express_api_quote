@@ -25,10 +25,14 @@ body {
 a {
   color: #e7e9ea;
 }
+
 header,
 footer {
   height: 10vh;
 }
+
+/* main_page */
+
 main {
   width: 100vw;
   height: 80vh;
@@ -41,6 +45,7 @@ main {
 #top {
   text-decoration: none;
 }
+
 #top_main {
   font-size: 120px;
   font-weight: bold;
@@ -59,12 +64,16 @@ main {
     opacity: 1;
   }
 }
+
+/* quote page */
+
 #quote-wrapper {
   width: 65%;
   height: 80%;
   position: relative;
   margin-bottom: 50px;
 }
+
 #error {
   font-size: 50px;
   color: white;
@@ -72,6 +81,7 @@ main {
   margin-top: 170px;
   font-style: italic;
 }
+
 #quote {
   font-size: 50px;
   color: white;
@@ -84,6 +94,7 @@ main {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
+
 @keyframes quote_effect {
   0% {
     opacity: 0;
@@ -94,6 +105,7 @@ main {
     transform: translateX(0);
   }
 }
+
 #quote_long {
   font-size: 40px;
   color: white;
@@ -107,6 +119,7 @@ main {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
+
 #quote_so_long {
   font-size: 35px;
   color: white;
@@ -144,13 +157,16 @@ main {
     transform: translateY(0);
   }
 }
+
 #link-tag {
   font-size: 25px;
 }
+
 #link-tag:hover {
   font-size: 25px;
   font-weight: bold;
 }
+
 footer {
   font-size: 12px;
   display: flex;
@@ -158,16 +174,19 @@ footer {
   align-items: center;
 }
 
+/* mobile page design */
 @media screen and (max-width: 767px) {
   main {
     width: 100vw;
     height: 85vh;
   }
+
   #quote-wrapper {
     width: 90vw;
     height: 75%;
     margin-bottom: 50px;
   }
+
   #quote,
   #quote_long,
   #quote_so_long {
@@ -190,9 +209,11 @@ footer {
   #link-tag {
     font-size: 15px;
   }
+
   #link-tag:hover {
     font-size: 15px;
   }
+
   #top_main {
     font-size: 40px;
   }

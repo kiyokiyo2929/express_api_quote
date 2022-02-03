@@ -7,7 +7,6 @@ router.get('/', function(req, res, next) {
   let background0;
   let background1;
   let background2;
-  console.log('hello')
   res.render('index', { background_main, background0, background1, background2 });
 });
 
