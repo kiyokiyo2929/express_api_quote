@@ -1,4 +1,5 @@
-https://nice-quotes25.herokuapp.com/
+https://nice-quotes25.herokuapp.com/ (heroku -> stopped)
+https://express-api-quote-fws1.vercel.app/
 
 (Express + API)
 
